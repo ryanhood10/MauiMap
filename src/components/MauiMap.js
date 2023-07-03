@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
+import "../assets/MauiMap.css"
 
 const GoogleMap = () => {
   useEffect(() => {
     const loadMap = async () => {
       const loader = new Loader({
-        apiKey: process.env.REACT_APP_GOOGLE_MAPS_API,
+        apiKey: process.env.GOOGLE_MAPS_API,
         version: 'weekly',
         // ...additionalOptions,
       });
@@ -22,10 +23,13 @@ const GoogleMap = () => {
         });
 
         // Do additional map-related operations here
+
+        //adding markers
+        //Hanawi Falls Marker #1
         new google.maps.Marker({
-            position: { lat: 20.7984, lng: -156.3319 },
+            position: { lat: 20.8096432, lng: -156.1095584 },
             map,
-            title: "Hello World!",
+            title: "Hanawi Falls",
           });
 
 
