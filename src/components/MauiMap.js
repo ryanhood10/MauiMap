@@ -22,6 +22,13 @@ const GoogleMap = () => {
         });
 
         // Do additional map-related operations here
+        new google.maps.Marker({
+            position: { lat: 20.7984, lng: -156.3319 },
+            map,
+            title: "Hello World!",
+          });
+
+
 
       } catch (error) {
         console.error('Error loading Google Maps API:', error);
