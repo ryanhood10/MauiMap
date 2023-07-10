@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
-import { Loader } from '@googlemaps/js-api-loader';
+import { Loader, importLibrary } from '@googlemaps/js-api-loader';
 import "../assets/MauiMap.css"
 
-const GoogleMap = () => {
+var API_KEY="AIzaSyAxLVl-y4ybbR3Nn7Lr2FXCi_nQZSFDAqk"
+
+const MauiMap = () => {
   useEffect(() => {
     const loadMap = async () => {
       const loader = new Loader({
-        apiKey: process.env.GOOGLE_MAPS_API,
-        version: 'weekly',
+        apiKey: API_KEY,
+        version: '3.45',
         // ...additionalOptions,
       });
 
@@ -45,4 +47,4 @@ const GoogleMap = () => {
   return <div id="map" style={{ width: '100%', height: '400px' }}></div>;
 };
 
-export default GoogleMap;
+export default MauiMap;

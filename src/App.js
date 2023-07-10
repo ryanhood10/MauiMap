@@ -5,7 +5,8 @@ import { setContext } from '@apollo/client/link/context';
 import Header from './components/Header';
 // import Main from './Main';
 import Footer from './components/Footer';
-import GoogleMap from './components/MauiMap';
+import MauiMap from './components/MauiMap';
+
 
 
 // Create the Apollo client
@@ -40,7 +41,7 @@ function App() {
           <Header />
           <Routes>
             {/* <Route exact path="/" element={<Main />} /> */}
-            <Route exact path="/" element={<GoogleMap />} />
+            <Route exact path="/" element={<MauiMap />} />
           </Routes>
           <Footer />
         </BrowserRouter>
