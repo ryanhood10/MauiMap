@@ -8,7 +8,8 @@ import Footer from './components/Footer';
 import MauiMap from './components/MauiMap';
 //import pages
 import { Register } from './pages/Register';
-
+import FoodTruckRestaurantPage from './pages/Food';
+import ThingsToDo from './pages/ThingsToDo';
 
 
 // Create the Apollo client
@@ -46,6 +47,9 @@ function App() {
             <Route exact path="/" element={<Register />} />
 
             <Route exact path="/MauiMap" element={<MauiMap />} />
+            <Route exact path="/food-info" element={<FoodTruckRestaurantPage />} />
+            <Route exact path="/general-info" element={<ThingsToDo />} />
+
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -1,0 +1,98 @@
+/* Add any global styles if needed */
+
+.info-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .info-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .attractions-container,
+  .activities-container {
+    flex: 1;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    position: relative;
+  }
+  
+  /* Add the dark oval shape for the scrollbar */
+  .attractions-container::-webkit-scrollbar,
+  .activities-container::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Customize the scrollbar track */
+  .attractions-container::-webkit-scrollbar-track,
+  .activities-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the scrollbar track color */
+  }
+  
+  /* Customize the scrollbar thumb */
+  .attractions-container::-webkit-scrollbar-thumb,
+  .activities-container::-webkit-scrollbar-thumb {
+    background-color: #999; /* Set the scrollbar thumb color */
+    border-radius: 6px; /* Set the scrollbar thumb shape (an oval) */
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    width: 33.33%;
+    text-align: center;
+  }
+  
+  .activities-title {
+    left: 66.66%; /* Center "Activities" at 2/3 of the container */
+  }
+  
+  .attractions-title {
+    left: 33.33%; /* Center "Attractions" at 1/3 of the container */
+  }
+  
+  .item {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add the line between the sections */
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-left: 5px solid #767676;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  /* Mobile Responsive (No changes for scrollbar styling) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .attractions-container,
+    .activities-container {
+      height: auto;
+      max-height: 400px;
+    }
+  }
+  

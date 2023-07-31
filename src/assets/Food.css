@@ -1,0 +1,49 @@
+.food-truck-restaurant-page {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(33.333% - 20px); /* 33.333% is 100% / 3, and 20px is the combined padding of left and right */
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Style the image to fit the items div */
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image within the items div */
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
