@@ -1,5 +1,7 @@
 #map {
-  padding-top: 400px;
+  padding-top: 600px;
+  padding-bottom: 10px;
+  background-color: rgb(97, 91, 91);
 }
 
 div{
@@ -12,5 +14,6 @@ html, body {
 }
 
 .header {
-  height: 40px; /* Adjust the height of your header component */
+  height: 60px; /* Adjust the height of your header component */
 }
+

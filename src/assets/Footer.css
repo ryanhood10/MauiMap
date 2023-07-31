@@ -1,14 +1,60 @@
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    padding: 1em 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
- h3 {
-  align-items:end;
-  color: #435058;
- }
- 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.004em;
+  background-color: #343E3D;
+  color: #fff;
+  position: fixed; /* Set the position to fixed */
+  bottom: 0; /* Anchor it to the bottom of the viewport */
+  width: 100%; /* Span the entire width of the viewport */
+  height: 10%;
+  border-top: 1px solid #1D263B;
+
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+
+.footer p {
+  text-align: center;
+  padding-bottom: 3em;
+  margin:0;
+}
+
+.phone-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  height: 40px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.router-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.router-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.router-icons a:hover {
+  text-decoration: underline;
+}

@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <div className="header">
-      <h1>Maui Map </h1>
+      <h1 id='discover'>Discover Aloha: Maui Edition</h1>
     </div>
   );
 }

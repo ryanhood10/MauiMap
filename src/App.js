@@ -6,6 +6,8 @@ import Header from './components/Header';
 // import Main from './Main';
 import Footer from './components/Footer';
 import MauiMap from './components/MauiMap';
+//import pages
+import { Register } from './pages/Register';
 
 
 
@@ -41,7 +43,9 @@ function App() {
           <Header />
           <Routes>
             {/* <Route exact path="/" element={<Main />} /> */}
-            <Route exact path="/" element={<MauiMap />} />
+            <Route exact path="/" element={<Register />} />
+
+            <Route exact path="/MauiMap" element={<MauiMap />} />
           </Routes>
           <Footer />
         </BrowserRouter>
