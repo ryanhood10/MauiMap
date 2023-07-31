@@ -15,7 +15,7 @@
     font-weight: bold;
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
-    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, );
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -26,7 +26,7 @@
     font-weight: bold;
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
-    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
